@@ -7,25 +7,37 @@
     <title>Temperature</title>
     <style>
         .custom-background {
-            background-image: url('/assets/3.jpg');
+            background-image: url('/assets/5.jpg');
             background-size: cover;
             background-position: center;
+        }
+
+        /* Responsiveness using media queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .text-xl {
+                font-size: 1.25rem;
+            }
         }
     </style>
 </head>
 <body class="custom-background">
-    <div class="container mx-auto p-6 w-3/6 mt-10">
+    <div class="container mx-auto p-6 w-3/6 md:w-2/3 lg:w-1/2 mt-10">
         <div class="bg-white shadow-md rounded-lg p-6">
             <h1 class="text-3xl font-bold text-center mb-6 uppercase">Temperature</h1>
-            <div id="intro-text" class="text-gray-700 leading-7 text-xl">
+            <div id="intro-text" class="text-gray-700 leading-7 text-xl text-justify">
                 <p>
                     Sensor suhu (temperature sensor) adalah perangkat elektronik yang digunakan untuk mengukur suhu dari lingkungan atau objek tertentu. Sensor suhu ini mengubah perubahan suhu menjadi sinyal listrik yang dapat diinterpretasikan oleh perangkat elektronik atau sistem pengukuran.
                 </p>
+                <br>
                 <p>
                     Ada beberapa jenis sensor suhu yang berbeda dengan prinsip kerja yang beragam. Berikut adalah beberapa jenis sensor suhu yang umum digunakan:
                 </p>
+                <br>
             </div>
-            <div id="full-text" class="text-gray-700 leading-7 hidden text-xl">
+            <div id="full-text" class="text-gray-700 leading-7 hidden text-xl text-justify">
                 <ol class="list-decimal list-inside">
                     <li>Sensor Termokopel: Termokopel terdiri dari dua kawat logam yang berbeda yang dihubungkan pada satu ujung dan dibiarkan terbuka pada ujung lainnya. Ketika ada perbedaan suhu antara kedua ujung, terjadi arus listrik di dalam kawat, dan perbedaan suhu ini dapat diukur untuk mengetahui suhu aktual.</li>
                     <li>Sensor Termoresistor (RTD - Resistance Temperature Detector): RTD adalah jenis sensor yang berbasis resistansi. Biasanya, sensor RTD menggunakan plat platinum sebagai elemen resistif yang mengalami perubahan resistansi dengan perubahan suhu. Nilai resistansi ini kemudian dikonversi menjadi suhu dalam derajat Celsius atau Fahrenheit.</li>
@@ -33,6 +45,7 @@
                     <li>Sensor Thermocouple: Sensor thermocouple juga berdasarkan prinsip efek termoelektrik, mirip dengan termokopel. Thermocouple terbuat dari dua kawat logam yang berbeda yang dihubungkan pada kedua ujungnya. Ketika ada perbedaan suhu antara kedua ujung, terjadi tegangan termoelektrik yang proporsional dengan perbedaan suhu.</li>
                     <li>Sensor Infrared (IR): Sensor inframerah digunakan untuk mengukur suhu tanpa kontak fisik dengan objek. Sensor ini mengukur radiasi inframerah yang dipancarkan oleh objek dan mengkonversinya menjadi nilai suhu.</li>
                 </ol>
+                <br>
                 <p>
                     Sensor suhu digunakan dalam berbagai aplikasi, termasuk di dalam sistem pengendalian suhu, perangkat rumah tangga seperti termometer digital, aplikasi industri, kendaraan, alat kesehatan, dan banyak lagi. Informasi suhu yang akurat dan dapat diandalkan dari sensor suhu sangat penting dalam banyak aspek kehidupan sehari-hari dan teknologi modern.
                 </p>
@@ -48,7 +61,6 @@
         </div>
     </div>
 
-    <script src="src/script2.js">
-    </script>
+    <script src="src/script2.js"></script>
 </body>
 </html>
